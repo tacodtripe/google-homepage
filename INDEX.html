@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+
+    <style>
+        *{
+            box-sizing: border-box;
+            font-family: Arial;
+        }
+
+        .container{
+            display: grid;
+            height: 100vh;
+            width: 100vw;
+            grid-template-columns:auto auto auto auto;
+            grid-template-rows:auto auto 35px 50px;
+            grid-template-areas:
+            ". . nav1"
+            ". logo ."
+            "text text text"
+            "nav2 nav2 nav3";
+        }
+
+        .nav1 {
+            grid-area: nav1;
+        }
+        .nav2 {
+            grid-area: nav2;
+        }
+        .logo {
+            grid-area: logo;
+        }
+        .nav3 {
+            grid-area: nav3;
+        }
+        .text {
+            grid-area: text;
+            background-color:#f0f0f0;
+            margin-left: -8px;
+            margin-right: 0px;
+            width: 1861px;
+        }
+
+        ul.upper {
+            list-style-type: none;
+            margin-right: 15px;
+            padding: 0px;
+            grid-template-columns: repeat(4,max-content);
+            display: grid;
+            grid-gap: 10px;
+            justify-content: end;
+            
+        }
+
+        .nav2 {
+            list-style-type: none;
+            padding: 0px;
+            margin-left: -28px;
+            background-color:#f0f0f0;
+            grid-template-columns: repeat(4,max-content);
+            display: grid;
+            grid-gap: 10px;
+            justify-content: start;
+        }
+
+        .nav3 {
+            list-style-type: none;
+            margin: 0px;
+            padding: 0px;
+            background-color: #f0f0f0;
+            grid-template-columns: repeat(3,max-content);
+            display: grid;
+            grid-gap: 10px;
+            justify-content: end;
+        }
+
+        .sign-in {
+            background-color: #4285f4;
+            color: white;
+            padding: 3px 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            display: block;
+        }
+        .center {
+            display: grid;
+            grid-template-rows: repeat(4,auto);
+        }
+
+        .glogo {
+            position: relative;
+            left: 42%;
+        }
+
+        .magnifier {
+            position: relative;
+            width: 24px;
+            top: 13px;
+            left: 219px;
+        }
+
+        .search-bar:hover {
+            border: none;
+            box-shadow: 0 0 5px gray;
+
+        }
+        .search-bar {
+            width: 645px;
+            height: 41px;
+            border-radius: 30px;
+            border: solid 1px #dfe1e5;
+            position: relative;
+            left: 212px;
+            top: -20px;
+             background-color: transparent;
+}
+
+        .button-1 {
+            width: 162px;
+            position: relative;
+            left: 362px;
+        }
+
+        .button-2 {
+            width: 165px;
+            position: relative;
+            top: -29px;
+            left: 554px;
+        }
+    
+    </style>
+</head>
+
+<body>
+    <container class="container">
+        <div class="nav1">
+                <ul class="upper">
+                        <li><a href="#">Gmail</a></li>
+                        <li><a href="#">Imagenes</a></li>
+                        <li><a href="#"><img src="./pictures/dots.png" alt="dots"></a></li>
+                        <li><a class="sign-in" href="#">Sign in</a></li>
+                      </ul>
+        </div>
+        <div class="logo"> 
+            <div class="center">
+             <img class="glogo" src="./pictures/logo.png" alt="Google logo">
+             <img class="magnifier" src="./pictures/magnifier.png" alt="magnifier">
+             <input type="text" class="search-bar">
+             <button class="button-1">Google Search</button><button class="button-2">I'm Feeling Lucky</button>
+            </div>
+        </div>
+       
+        <div class="text"> <p class="mexico">Mexico</p></div>
+       
+        <div class="nav2">
+                <ul class="nav2">
+                        <li><a href="#">Advertisign</a></li>
+                        <li><a href="#">Business</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">How Search work</a></li>
+                       
+                    </ul>
+        </div>
+       
+        <div class="nav3">
+                <ul class="nav3">
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Settings</a></li>
+                </ul>
+            </div>
+    </container>
+</body>
+</html>
