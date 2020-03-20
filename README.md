@@ -2,7 +2,7 @@
 
 > Fourth project in the HTML/CSS module.
 
-![screenshot](./app_screenshot.jpg)
+![screenshot](pictures/app_screenshot.jpg)
 
 This is a microverse pre-course HTML/CSS project, I was required to exercise the use of basic HTML elements and CSS to clone an existing webpage.
 I managed to create a clone of the old Google Homepage - Link to the original page is right here [Google homepage](https://www.google.com/webhp?hl=en&ictx=2&sa=X&ved=0ahUKEwja-omK2anoAhUBLK0KHcA0ANEQPQgH).
