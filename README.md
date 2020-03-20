@@ -1,6 +1,6 @@
 # Old Apple webpage clone
 
-> Fourth project in the HTML/CSS module.
+> First project in the pre-course HTML/CSS module.
 
 ![screenshot](pictures/app_screenshot.jpg)
 
